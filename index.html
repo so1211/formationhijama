@@ -621,8 +621,7 @@ function handleBuy(e, emailId, prenomId){
     return;
   }
   const STRIPE_URL = 'https://buy.stripe.com/eVq8wR1Sc7Myay0g24gMw01';
-  const url = STRIPE_URL + '?prefilled_email=' + encodeURIComponent(email);
-  window.location.href = url;
+  window.location.href = STRIPE_URL;
 }
 </script>
 </body>
