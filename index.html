@@ -568,7 +568,7 @@ footer a{color:rgba(255,255,255,.25);text-decoration:none}
 
 <footer>
   <p style="font-size:13px;color:rgba(255,255,255,.4);margin-bottom:6px">Wellness by So · Formation Hijama Féminine</p>
-  <p><a href="mailto:wellness.by.so@gmail.com">wellness.by.so@gmail.com</a> &nbsp;·&nbsp; Paiement sécurisé Stripe</p>
+  <p><a href="/cdn-cgi/l/email-protection#2b5c4e4747454e58580549520558446b4c464a424705484446"><span class="__cf_email__" data-cfemail="e196848d8d8f849292cf8398cf928ea1868c80888dcf828e8c">[email&#160;protected]</span></a> &nbsp;·&nbsp; Paiement sécurisé Stripe</p>
   <p style="margin-top:4px"><a href="#">Mentions légales</a> &nbsp;·&nbsp; <a href="#">CGV</a> &nbsp;·&nbsp; <a href="#">Contact</a></p>
   <p style="margin-top:8px;font-size:10px">Ce contenu est fourni à titre éducatif. Consultez un professionnel de santé pour tout problème médical. © 2025 Wellness by So</p>
 </footer>
@@ -582,7 +582,7 @@ footer a{color:rgba(255,255,255,.25);text-decoration:none}
   <a href="#commander" class="sticky-btn">🌸 Je reçois ma formation →</a>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* Sticky bar */
 new IntersectionObserver(e=>{
   document.getElementById('stickyBar').classList.toggle('on',!e[0].isIntersecting);
@@ -620,9 +620,8 @@ function handleBuy(e, emailId, prenomId){
     document.getElementById(prenomId).style.borderColor='#C5476F';
     return;
   }
-  /* ► https://buy.stripe.com/9B6eVf2Wg6IueOg036gMw00 ◄ */
-  const stripeUrl = 'https://buy.stripe.com/TON_LIEN_ICI';
-  const url = stripeUrl + '?prefilled_email=' + encodeURIComponent(email);
+  const STRIPE_URL = 'https://buy.stripe.com/9B6eVf2Wg6IueOg036gMw00';
+  const url = STRIPE_URL + '?prefilled_email=' + encodeURIComponent(email);
   window.location.href = url;
 }
 </script>
